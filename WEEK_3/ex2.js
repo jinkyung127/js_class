@@ -7,7 +7,7 @@ function deepCopy(obj) {
 	const clonedObj = {};
 	for (const key in obj) {
 		// 이 부분을 완성해 보세요. 
-		if (typeof obj[key] === 'object') {
+    if (typeof obj[key] === 'object') {
       clonedObj[key] = deepCopy(obj[key]);
     } else {
       clonedObj[key] = obj[key];
