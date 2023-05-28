@@ -5,12 +5,11 @@
 function fetchAndPrintJson(url) {
   // 매개변수로 받은 url 주소의 데이터를 fetch 받아와서 출력하는 함수를 작성하세요.
   return fetch(url)
-  .then((response)=> {
-    return response.json();
-  })
-  .then((data)=> {
-    console.log(data);
-  })
+.then((response) => {
+  return response.json();
+}).then((data) => {
+  console.log(data);
+})
 }
 
 fetchAndPrintJson('https://jsonplaceholder.typicode.com/posts/1');

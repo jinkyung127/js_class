@@ -5,6 +5,7 @@ function mapArray(arr) {
 	// 객체 {key: value}의 key가 변수를 참조하려면 [key] 이렇게 대괄호 안에 넣으세요.
   // 여기에 코드를 작성하세요.
 	return arr.map((el, idx) => ({[idx]: el}));
+	// 객체 key가 idx를 참조하므로 [idx]
 }
 
 const result = mapArray( ["a","b","c"] );
