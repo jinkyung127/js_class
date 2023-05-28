@@ -4,9 +4,9 @@
 
 async function fetchJson(url) {
   // 여기에 코드를 작성하세요.
-  const response = await fetch(url);
-  const data = await response.json();
-  console.log(data);
+  const response = await fetch(url); //fetch로 url 받아오기
+  const data = await response.json(); //응답 받으면 data 저장하기
+  console.log(data); //data 찍기
 }
 
 fetchJson('https://jsonplaceholder.typicode.com/posts/1');
